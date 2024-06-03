@@ -23,11 +23,15 @@ body {
 	margin-bottom: 50px;
 }
 .labels-cont {
+	width: fit-content;
+	/*  */
 	padding: 20px;
 	border: 1.4px dashed #6b6a6a;
 	border-radius: 10px;
 }
 .labels-cont-1 {
+	width: fit-content;
+	/*  */
 	margin-bottom: 50px;
 }
 .labels-cont .labels {
@@ -100,6 +104,8 @@ body {
 	border-radius: 10px;
 }
 .dots-cont {
+	width: fit-content;
+	/*  */
 	margin-top: 50px;
 }
 .dots-cont .dots {
@@ -154,6 +160,8 @@ body {
 	border-radius: 10px;
 }
 .label-cont {
+	width: fit-content;
+	/*  */
 	margin-top: 50px;
 }
 .label-cont .label {
@@ -185,6 +193,8 @@ body {
 	border-radius: 10px;
 }
 .image-cont {
+	width: fit-content;
+	/*  */
 	margin-top: 50px;
 }
 .image-cont .image {
@@ -202,10 +212,40 @@ body {
 	width: 30px;
 	cursor: pointer;
 }
+.range-cont {
+	margin-top: 50px;
+	padding: 20px 20px;
+	border: 1.4px dashed #6b6a6a;
+	border-radius: 10px;
+}
+
+.range-cont span input {
+	accent-color: #565656;
+}
+.range-cont span input::-webkit-slider-thumb {
+	color: coral;
+	/* height: 100%; */
+}
+.range-cont span:nth-of-type(2) input {
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 769px) {
+	.hero-section {
+		padding: 50px 50px;
+	}
+}
 
 @media only screen and (max-width: 500px) {
+	.hero-section {
+		padding: 50px 30px;
+	}
 	/* .labels-cont-2 .labels span:nth-of-type(1), */
 	.labels-cont-2 .labels span:nth-of-type(6) {
 		padding: 10px 0;
+	}
+	.hero-section .hero-title {
+		font-size: 32px;
+		margin-bottom: 30px;
 	}
 }
